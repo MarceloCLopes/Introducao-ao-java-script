@@ -1,25 +1,18 @@
 var currentNumberWrapper = document.getElementById("currentNumber");
 var currentNumber = 0;
+let btnAdicionar = document.getElementById("adicionar");
 
 document.getElementById("adicionar").addEventListener("click", () => {
-  increment();
-});
-
-document.getElementById("subtrair").addEventListener("click", () => {
-  decrement();
-});
-
-const increment = () => {
   currentNumber = currentNumber + 1;
   currentNumberWrapper.innerHTML = currentNumber;
   colorChange();
-};
+});
 
-const decrement = () => {
+document.getElementById("subtrair").addEventListener("click", () => {
   currentNumber = currentNumber - 1;
   currentNumberWrapper.innerHTML = currentNumber;
   colorChange();
-};
+});
 
 //Mudar a cor do texto para 'red' quando for negativo
 function colorChange() {
