@@ -13,6 +13,7 @@ function decrement() {
   colorChange();
 }
 
+//Mudar a cor do texto para 'red' quando for negativo
 function colorChange() {
   if (currentNumber < 0) {
     document.getElementById("currentNumber").style.color = "#FF0000";
